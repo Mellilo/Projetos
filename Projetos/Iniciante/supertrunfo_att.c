@@ -67,7 +67,7 @@ scanf("%d", &Numeros_de_pontos_turisticos2);
 PIB_per_capita1 = PIB1 / Populacao1;
 PIB_per_capita2 = PIB2 / Populacao2;
 Densidade_populacional1 = Populacao1 / Area1;
-Densidade_populacional2 = Populacao2 / Area2;
+Densidade_populacional2  = Populacao2 / Area2;
 
 
 //Immprindo primeira carta
@@ -81,7 +81,7 @@ printf("A area da cidade é: %.0f\n",Area1);
 printf("O Pib da cidade é: %.0f\n",PIB1);
 printf("A quantidade de pontos turísticos da cidade são: %d\n",Numeros_de_pontos_turisticos1);
 printf("Densidade Populacional: %2.f hab/km²\n",Densidade_populacional1);
-printf("Pib per Capita: %2.f\n",PIB_per_capita1);
+printf("Pib per Capita: %2.f reais\n",PIB_per_capita1);
 
 //Immprindo segunda carta
 printf("\nA segunda carta é:\n");

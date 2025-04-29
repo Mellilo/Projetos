@@ -73,6 +73,9 @@ int main() {
     superpoder_1 = (float)Populacao1 + Area1 + PIB1 + (float)Numeros_de_pontos_turisticos1 + PIB_per_capita1 + (1.0 / Densidade_populacional1);
     superpoder_2 = (float)Populacao2 + Area2 + PIB2 + (float)Numeros_de_pontos_turisticos2 + PIB_per_capita2 + (1.0 / Densidade_populacional2);
 
+
+
+
     // Comparação de cartas
     printf("\nComparação de Cartas:\n\n");
     printf("População: Carta %s venceu (%d)\n", Populacao1 > Populacao2 ? "1" : "2", Populacao1 > Populacao2 ? 1 : 0);
@@ -87,10 +90,23 @@ int main() {
     printf("\nSuper Poder da Carta 1: %.2f\n", superpoder_1);
     printf("Super Poder da Carta 2: %.2f\n", superpoder_2);
 
+    
+    printf("\n%s tem %lu habitantes\n",Cidade1, Populacao1);
+    printf("\n%s tem %lu habitantes\n",Cidade2, Populacao2);
+    if (Populacao1 > Populacao2) {
+        printf("\nA carta 1 (%s) venceu!\n", Cidade1);
+
+    } else
+        printf("\nA carta 2 (%s) venceu!\n", Cidade2);;
+    
+
+    
+
+
     // Imprimindo a primeira carta
     printf("\n\nA Primeira carta é:\n");
-    printf("Estado: %c\n", Estado1);
     printf("Código: %s\n", Codigo_da_carta1);
+    printf("Estado: %c\n", Estado1);
     printf("Cidade: %s\n", Cidade1);
     printf("População: %lu habitantes\n", Populacao1);
     printf("Área: %.2f km²\n", Area1);
@@ -101,10 +117,10 @@ int main() {
 
     // Imprimindo a segunda carta
     printf("\nA Segunda carta é:\n");
-    printf("Estado: %c\n", Estado2);
+    
     printf("Código: %s\n", Codigo_da_carta2);
+    printf("Estado: %c\n", Estado2);
     printf("Cidade: %s\n", Cidade2);
-    printf("População: %lu habitantes\n", Populacao2);
     printf("Área: %.2f km²\n", Area2);
     printf("PIB: %.2f\n", PIB2);
     printf("Pontos Turísticos: %d\n", Numeros_de_pontos_turisticos2);
